@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>التكليفات | رفيق الطالب</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">🎓 رفيق الطالب</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="courses.html">المقررات</a></li>
+                <li><a href="assignments.html" class="active">التكليفات</a></li>
+                <li><a href="library.html">المكتبة</a></li>
+            </ul>
+        </nav>
+        <div class="buttons">
+            <a href="dashboard.html" class="register-btn">لوحة التحكم</a>
+        </div>
+    </header>
+
+    <section class="page-banner">
+        <div class="container">
+            <h1>📝 التكليفات الدراسية</h1>
+            <p>تابع مواعيد تسليم واجباتك ومشاريعك الأكاديمية</p>
+        </div>
+    </section>
+
+    <section class="assignments-section">
+        <div class="container">
+            
+            <!-- نموذج إضافة تكليف جديد -->
+            <div class="form-wrapper">
+                <h2>➕ إضافة تكليف جديد</h2>
+                <form id="assignmentsForm" class="custom-form">
+                    <div class="form-group">
+                        <label for="title">اسم التكليف</label>
+                        <input type="text" id="title" placeholder="مثال: مشروع النهاية" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">المادة الدراسية</label>
+                        <input type="text" id="subject" placeholder="مثال: تصميم الويب" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="dueData">موعد التسليم</label>
+                        <input type="date" id="dueData" required>
+                    </div>
+                    <button type="submit" class="btn btn-main full-width">إضافة التكليف</button>
+                </form>
+            </div>
+
+            <hr class="section-divider">
+
+            <!-- قائمة التكليفات -->
+            <h2 class="sub-title">قائمة التكليفات الحالية</h2>
+            <div class="cards-grid">
+
+                <div class="assignment-card">
+                    <div class="status-badge status-progress">قيد التنفيذ</div>
+                    <h3>تصميم صفحة ويب</h3>
+                    <p class="subject-name">المادة: تصميم الويب</p>
+                    <p class="due-date">📅 موعد التسليم: 15 / 9 / 2026</p>
+                </div>
+
+                <div class="assignment-card">
+                    <div class="status-badge status-pending">لم يبدأ</div>
+                    <h3>مشروع C++</h3>
+                    <p class="subject-name">المادة: البرمجة</p>
+                    <p class="due-date">📅 موعد التسليم: 20 / 9 / 2026</p>
+                </div>
+
+                <div class="assignment-card">
+                    <div class="status-badge status-done">مكتمل</div>
+                    <h3>تصميم قاعدة بيانات</h3>
+                    <p class="subject-name">المادة: قواعد البيانات</p>
+                    <p class="due-date">📅 موعد التسليم: 25 / 9 / 2026</p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>جميع الحقوق محفوظة © 2026 | رفيق الطالب</p>
+    </footer>
+
+</body>
+</html>

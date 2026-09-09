@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الملف الشخصي | رفيق الطالب</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">🎓 رفيق الطالب</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="dashboard.html">لوحة التحكم</a></li>
+            </ul>
+        </nav>
+        <div class="buttons">
+            <a href="dashboard.html" class="register-btn">العودة للوحة التحكم</a>
+        </div>
+    </header>
+
+    <section class="page-banner">
+        <div class="container">
+            <h1>👤 الملف الشخصي</h1>
+            <p>تعديل وإدارة بياناتك الشخصية وحسابك الأكاديمي.</p>
+        </div>
+    </section>
+
+    <section class="profile-section">
+        <div class="container">
+            <div class="form-wrapper">
+                <form class="custom-form">
+                    <div class="form-group">
+                        <label for="prof-name">اسم الطالب</label>
+                        <input type="text" id="prof-name" value="أحمد محمد" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="prof-email">البريد الإلكتروني</label>
+                        <input type="email" id="prof-email" value="ahmed@example.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="prof-major">التخصص الدراسي</label>
+                        <input type="text" id="prof-major" value="علوم الحاسوب" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="prof-pass">كلمة المرور الجديدة (اختياري)</label>
+                        <input type="password" id="prof-pass" placeholder="اتركه فارغاً إذا لم ترد التغيير">
+                    </div>
+
+                    <button type="submit" class="btn btn-main full-width">حفظ التغييرات</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>جميع الحقوق محفوظة © 2026 | رفيق الطالب</p>
+    </footer>
+
+</body>
+</html>
